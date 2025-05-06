@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Udemy course video downloader online – UdemyFetcher™</title><style>body {
+      font-family: Arial, sans-serif;
+      background-color: #EFEBE0;
+      color: #333;
+      text-align: center;
+      /* padding: 15px; */
+      width: 550px;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      height: auto;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: #555;
+    }
+    .video-placeholder {
+      display: inline-flex;
+      align-items: center;
+      
+    }
+
+    .video-placeholder img{
+      width: 100%;
+      margin: auto;
+    }
+    .help-section {
+      margin-top: 40px;
+    }
+    .helptip{
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .button {
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 50px;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+      width: 300px;
+      text-align: left;
+      height: 34px;
+    }
+    .button:hover {
+      background-color: #f0f0f0;
+    }
+    .icon {
+      margin-right: 10px;
+    }
+    .small-text {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .bottom-text{
+      margin-top: 30px;
+    }
+
+    .email{
+      background-image: var(--addon-email);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      cursor: pointer;
+      width: 40px;
+      height: 35px;
+    }
+    .discard{
+      background-image: var(--addon-discard-green);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      cursor: pointer;
+      width: 40px;
+      height: 35px;
+    }
+
+    #userId{
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* .buttonSpan{
+      width: 140px;
+    } */
+
+    .sj-tip{
+      font-size: 17px;
+      color: red;
+     }
+
+     #GuestDiv,#MemberDiv,#ProMemberDiv{
+      display: none;
+     }</style></head><body><div class="container"><div class="video-placeholder"><img src="../assets/imgs/optionlogo.png"/></div><h2 style="color: #c733a5;">Please refresh the udemy page if you can't see the download button.</h2><div class="help-section"><p class="helptip">Feel free to contact us for assistance.</p><div class="button-row"><a class="button" id="jumpDiscard"><span class="icon discard"></span> <span class="buttonSpan">Discord for timely assistance</span></a></div><div class="button-row"><a class="button" id="copyEmail"><span class="icon email"></span> <span id="email" class="buttonSpan">Email for 24 Hours response<br/><span id="emailAddress" style="font-size: 13px;"></span></span></a></div></div><p class="small-text bottom-text">Your ID:<span id="userId"></span></p><div style="margin: 1rem 0;"><div id="GuestDiv"><p class="sj-tip">You can download <span id="guest_canDownloadCount"></span> videos as guest, Upgrade to download more.</p><a id="GuestBtn" style="border-radius: 11px;
+              background: linear-gradient(57deg, #272727 19.8%, #696969 82.2%);
+              padding: 2px 8px;
+              transform: scale(0.85);
+              cursor: pointer;
+              display: inline-flex;
+              align-items: center;" title="After upgrading to Pro membership, you can download unlimit. Click here to upgrade." target="_blank"><img src="../assets/imgs/rocket.png" style="height: 1.4em; width: auto; margin-right: 4px;"/> <span style="background: linear-gradient(180deg, #FFEAB4 17.65%, #F8C235 85.29%);
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  font-size: 1.2rem;">Upgrade</span></a></div><div id="OtherDiv"><p class="sj-tip">You can download <span id="other_canDownloadCount"></span> videos(has downloaded <span id="other_downloadedCount"></span> videos) as <span id="other_memberName"></span>, Upgrade to download more.</p><a id="OtherBtn" style="border-radius: 11px;
+              background: linear-gradient(57deg, #272727 19.8%, #696969 82.2%);
+              padding: 2px 8px;
+              transform: scale(0.85);
+              cursor: pointer;
+              display: inline-flex;
+              align-items: center;" title="After upgrading to Pro membership, you can download unlimit. Click here to upgrade." target="_blank"><img src="../assets/imgs/rocket.png" style="height: 1.4em; width: auto; margin-right: 4px;"/> <span style="background: linear-gradient(180deg, #FFEAB4 17.65%, #F8C235 85.29%);
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  font-size: 1.2rem;">Upgrade</span></a></div><div id="MemberDiv"><p class="sj-tip" id="member_fix" style="display: none;">You can download <span id="member_otherCanDownloadCount"></span> videos(has downloaded <span id="member_otherDownloadedCount"></span> videos) as <span id="member_otherMmemberName"></span>.</p><p class="sj-tip">You can download <span id="member_canDownloadCount"></span> videos per day(has downloaded <span id="member_downloadedCount"></span> videos today) as a Member, Upgrade to download more and download from Udemy organization.</p><p>expired Date：<span id="member_expiredDate"></span></p><a id="MemberBtn" style="border-radius: 11px;display: none;
+              background: linear-gradient(57deg, #272727 19.8%, #696969 82.2%);
+              padding: 2px 8px;
+              transform: scale(0.85);
+              cursor: pointer;
+              display: inline-flex;
+              align-items: center;" title="After upgrading to Pro membership, you can download unlimit. Click here to upgrade." target="_blank"><img src="../assets/imgs/rocket.png" style="height: 1.7em; width: auto; margin-right: 4px;"/> <span style="background: linear-gradient(180deg, #FFEAB4 17.65%, #F8C235 85.29%);
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  font-size: 1.2rem;">Upgrade</span></a></div><div id="ProMemberDiv"><p class="sj-tip" id="promember_fix" style="display: none;">You can download <span id="promember_otherCanDownloadCount"></span> videos(has downloaded <span id="promember_otherDownloadedCount"></span> videos) as <span id="promember_otherMmemberName"></span>.</p><p class="sj-tip">You can download <span id="promember_canDownloadCount"></span> videos per day(has downloaded <span id="promember_downloadedCount"></span> videos today) as a ProMember.</p><p>expired Date：<span id="promember_expiredDate"></span></p></div></div></div><script src="js/option.js"></script></body></html>

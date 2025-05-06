@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "دانلود کنید",
+        "description": "نام دکمه دانلود"
+    },
+    "signalUploadTip":{
+        "message": "دانلود ویدیو",
+        "description": "دانلود ویدیو batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadTitle":{
+        "message": "دانلود تمام ویدیوها",
+        "description": "دانلود تمام ویدیوهاbatch bulk mass download all udemy course lecture videos free "
+    },
+    "mutiUploadTip":{
+        "message": "دانلود تمام ویدیوها",
+        "description": "دانلود تمام ویدیوها batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadingTitle":{
+        "message": "در حال دانلود",
+        "description": "در حال دانلود batch bulk mass download all udemy course lecture videos free"
+    },
+    "discardBtnName":{
+        "message": "ملحق شدن discord",
+        "description": "discard نام دکمه"
+    }
+}

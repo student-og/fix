@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "download",
+        "description": "download button name"
+    },
+    "signalUploadTip":{
+        "message": "download video",
+        "description": "download udemy course lecture videos free"
+    },
+    "mutiUploadTitle":{
+        "message": "Download All",
+        "description": "batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadTip":{
+        "message": "download all videos",
+        "description": "batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadingTitle":{
+        "message": "Downloading",
+        "description": "batch bulk mass download all udemy course lecture videos free"
+    },
+    "discardBtnName":{
+        "message": "Join discord for download help",
+        "description": "discard button name"
+    }
+}

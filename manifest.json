@@ -1,0 +1,89 @@
+{
+  "manifest_version": 3,
+  "name": "Udemy course video downloader online – UdemyFetcher™",
+  "description": "One-Click (Batch) Download of Udemy Course Lecture Videos to Your PC in High Quality Online, NO ADS, Magic Udemy Downloader",
+  "version": "1.5.3",
+  "icons": {
+    "256": "assets/imgs/download_256.png",
+    "128": "assets/imgs/download_128.png",
+    "64": "assets/imgs/download_64.png",
+    "48": "assets/imgs/download_48.png",
+    "32": "assets/imgs/download_32.png",
+    "16": "assets/imgs/download_16.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/imgs/download_red.png",
+        "assets/imgs/loading_red.png",
+        "assets/imgs/download_yellow.png",
+        "assets/imgs/download_white.png",
+        "assets/imgs/loading_white.png",
+        "assets/imgs/discard-white.png",
+        "assets/imgs/discard-green.png",
+        "assets/imgs/google_favicon.ico",
+        "assets/libs/inject.js",
+        "assets/libs/drm_inject.js",
+        "assets/libs/play_inject.js",
+        "assets/libs/reverse.js",
+        "assets/libs/reverse.wasm",
+        "assets/libs/ffmpeg-core.js",
+        "assets/libs/ffmpeg-core.wasm",
+        "assets/libs/ffmpeg-core.worker.js",
+        "js/web_worker.js"
+      ],
+      "matches": [
+        "https://*.udemy.com/*",
+        "http://*.udemy.com/*",
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+    "downloads",
+    "storage",
+    "cookies",
+    "identity",
+    "webRequest",
+    "contextMenus",
+    "sidePanel",
+    "tabs",
+    "activeTab",
+    "offscreen",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://*.udemy.com/*",
+    "http://*.udemy.com/*",
+    "https://*.udemycdn.com/*",
+    "http://*.udemycdn.com/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "ucenter.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; worker-src 'self' 'wasm-unsafe-eval';"
+  },
+  "background": {
+    "service_worker": "js/service_work.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "matches": [
+        "https://*.udemy.com/*",
+        "http://*.udemy.com/*",
+        "<all_urls>"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "default_locale": "en",
+  "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+}

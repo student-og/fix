@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "indirmek",
+        "description": "indirme butonunun adı"
+    },
+    "signalUploadTip":{
+        "message": "Video indirme",
+        "description": "Video indirme batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadTitle":{
+        "message": "Tüm videoları indir",
+        "description": "Tüm videoları indir batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadTip":{
+        "message": "Tüm videoları indir",
+        "description": "Tüm videoları indir batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadingTitle":{
+        "message": "İndiriliyor",
+        "description": "İndiriliyor batch bulk mass download all udemy course lecture videos free"
+    },
+    "discardBtnName":{
+        "message": "Katılmak discord",
+        "description": "discard düğme adı"
+    }
+}

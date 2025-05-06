@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "scaricamento",
+        "description": "nome del pulsante di download"
+    },
+    "signalUploadTip":{
+        "message": "scaricare video",
+        "description": "scaricare udemy course lecture vídeo"
+    },
+    "mutiUploadTitle":{
+        "message": "scaricare tutti i vídeos",
+        "description": "scaricare tutti i udemy course lecture vídeos"
+    },
+    "mutiUploadTip":{
+        "message": "scaricare tutti i vídeos",
+        "description": "scaricare tutti i udemy course lecture vídeos"
+    },
+    "mutiUploadingTitle":{
+        "message": "scaricando",
+        "description": "scaricando udemy course lecture vídeos"
+    },
+    "discardBtnName":{
+        "message": "Giuntura discord",
+        "description": "discard nome del pulsante"
+    }
+}

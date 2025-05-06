@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "télécharger",
+        "description": "nom du bouton de téléchargement"
+    },
+    "signalUploadTip":{
+        "message": "télécharger une vidéo",
+        "description": "télécharger une udemy course lecture vidéo"
+    },
+    "mutiUploadTitle":{
+        "message": "télécharger toutes les vidéos",
+        "description": "télécharger toutes les udemy course lecture vidéos"
+    },
+    "mutiUploadTip":{
+        "message": "télécharger toutes les vidéos",
+        "description": "télécharger toutes les udemy course lecture vidéos"
+    },
+    "mutiUploadingTitle":{
+        "message": "en cours de téléchargement",
+        "description": "en cours de téléchargement udemy course lecture "
+    },
+    "discardBtnName":{
+        "message": "Rejoindre discord",
+        "description": "nom du bouton"
+    }
+}

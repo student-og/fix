@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "다운로드",
+        "description": "다운로드 버튼 이름"
+    },
+    "signalUploadTip":{
+        "message": "동영상 다운로드",
+        "description": "동영상 다운로드. batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadTitle":{
+        "message": "모든 동영상 다운로드",
+        "description": "모든 동영상 다운로드 batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadTip":{
+        "message": "모든 동영상 다운로드",
+        "description": "모든 동영상 다운로드 batch bulk mass download all udemy course lecture videos free"
+    },
+    "mutiUploadingTitle":{
+        "message": "다운로드 중",
+        "description": "다운로드 중. batch bulk mass download all udemy course lecture videos free"
+    },
+    "discardBtnName":{
+        "message": "가입하다 discord",
+        "description": "discard 버튼 이름"
+    }
+}

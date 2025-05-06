@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "للتحميل",
+        "description": "تحميل اسم الزر"
+    },
+    "signalUploadTip":{
+        "message": "تحميل الفيديو",
+        "description": "تحميل الفيديو"
+    },
+    "mutiUploadTitle":{
+        "message": "تحميل جميع الفيديوهات",
+        "description": "تحميل جميع الفيديوهات"
+    },
+    "mutiUploadTip":{
+        "message": "تحميل جميع الفيديوهات",
+        "description": "تحميل جميع الفيديوهات"
+    },
+    "mutiUploadingTitle":{
+        "message": "جارٍ التحميل",
+        "description": "جارٍ التحميل"
+    },
+    "discardBtnName":{
+        "message": "انضم Discord",
+        "description": "تجاهل اسم الزر"
+    }
+}

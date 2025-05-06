@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "herunterladen",
+        "description": "Name der Download-Schaltfläche"
+    },
+    "signalUploadTip":{
+        "message": "Video herunterladen",
+        "description": "udemy course lecture Video herunterladen"
+    },
+    "mutiUploadTitle":{
+        "message": "alle Videos herunterladen",
+        "description": "udemy course lecture alle Videos herunterladen"
+    },
+    "mutiUploadTip":{
+        "message": "alle Videos herunterladen",
+        "description": "udemy course lecture alle Videos herunterladen"
+    },
+    "mutiUploadingTitle":{
+        "message": "Herunterladen läuft",
+        "description": "udemy course lecture Herunterladen läuft"
+    },
+    "discardBtnName":{
+        "message": "Treten Sie Discord bei",
+        "description": "Schaltflächennamen verwerfen"
+    }
+}

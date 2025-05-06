@@ -1,0 +1,272 @@
+.or-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.or-divider p {
+  margin: 0 10px;
+  position: relative;
+  font-size: 13px;
+}
+.or-divider p::before, .or-divider p::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 170px;
+  height: 1px;
+  background: #dcdcdc;
+}
+.or-divider p::before {
+  left: -180px;
+}
+.or-divider p::after {
+  right: -180px;
+}
+
+.download-from-tip{
+  color: red;
+  margin: -15px 0px 10px;
+  display: none;
+}
+
+.top-tip{
+  margin: 10px 0;
+}
+
+.download-loading-spinner {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: downloadspin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.sendCodeSp {
+  border-top-color: #6a71f1;
+}
+
+@keyframes downloadspin {
+  to { transform: rotate(360deg); }
+}
+
+.google_download_login {
+  font-family: Microsoft YaHei;
+  text-align: center;
+  color: #3D4248;
+
+  h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+  }
+  .google-login {
+    background-color: #EEEFF0;
+  }               
+  
+  .other-login {
+    background-color: #EA4335;
+    color: #fff;
+  }
+  .login-button img {
+    margin-right: 10px;
+  }
+  .note {
+    color: #888;
+    margin: 15px auto 10px;
+    font-size: 12px;
+  }
+}
+
+.download_login-container {
+  font-family: Microsoft YaHei;
+  color: #3D4248;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group .password{
+    display: flex;
+    align-items: center;
+  }
+  .form-group label .forgot-link{
+    margin: 0 0 0 auto;
+    font-size: 12px;
+    color: #6a71f1;
+    text-decoration: none;
+    font-weight: 600;
+    display: none;
+    cursor: pointer;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-group input:focus,:focus-visible{
+    border: 1px solid #8387D4;
+    outline: none;
+  }
+  .login-btn {
+    background-color: #FF3B30;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .signup-link {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+    a{
+      cursor: pointer;
+    }
+  }
+  .signup-link a{
+    color: #6a71f1;
+  }
+  
+  .google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .google-login button {
+    background-color: #EEEFF0;
+    color: #444;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .google-login button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+}
+
+.download_signup-container{
+  font-family: Microsoft YaHei;
+  color: #3D4248;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-group {
+      margin-bottom: 15px;
+  }
+  .form-group label {
+      display: block;
+      margin-bottom: 5px;
+  }
+  .form-group input {
+    width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+
+  .form-group.email_verifycode_form{
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .form-group .email_verifycode {
+    width: calc(100% - 120px);
+  }
+
+  .form-group input:focus,:focus-visible{
+    border: 1px solid #8387D4;
+    outline: none;
+  }
+  .form-group .send-code {
+      display: inline-block;
+      padding: 10px;
+      border: 1px solid #6a71f1;
+      color: #6a71f1;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+      margin-left: 10px;
+      width: 120px;
+  }
+  .signup-btn {
+      background-color: #FF3B30;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  .google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .google-login button {
+      background-color: #EEEFF0;
+      color: #444;
+      border:  none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .google-login button img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+  }
+}

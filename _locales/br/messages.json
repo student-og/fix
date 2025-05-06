@@ -1,0 +1,26 @@
+{
+    "signalUploadName":{
+        "message": "baixar",
+        "description": "nome do botão de descarga"
+    },
+    "signalUploadTip":{
+        "message": "baixar vídeo",
+        "description": "baixar udemy course lecture vídeo"
+    },
+    "mutiUploadTitle":{
+        "message": "baixar todos os vídeos",
+        "description": "baixar todos os udemy course lecture vídeos"
+    },
+    "mutiUploadTip":{
+        "message": "baixar todos os vídeos",
+        "description": "baixar todos os udemy course lecture vídeos"
+    },
+    "mutiUploadingTitle":{
+        "message": "baixando",
+        "description": "baixar todos os udemy course lecture vídeos"
+    },
+    "discardBtnName":{
+        "message": "juntar discord",
+        "description": "descartar o nome do botão"
+    }
+}
